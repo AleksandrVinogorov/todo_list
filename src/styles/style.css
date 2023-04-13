@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Righteous&display=swap');
+.App {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    gap: 100px;
+    background-color: #222222;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    margin: 0;
+    color: #F5F5F5;
+}
+.header__logo {
+    background-image: url(../img/logo.svg);
+    width: 50px;
+    height: 60px;
+}
+li {
+    list-style-type: none;
+}
+/* Секция main */
+
+.list {
+    margin: 0 auto;
+    font-family: 'Montserrat';
+}
+.list-wrapper {
+    margin: 0 auto;
+    max-width: 400px;
+}
+.list-container {
+    padding: 10px;
+}
+.list-container > * {
+    margin-bottom: 20px;
+}
+.list-container__title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 45px;
+    border-radius: 4px;
+
+    font-family: 'Montserrat';
+    font-weight: 400;
+    background-color: #b7b7b7;
+}
+.checkbox {
+    margin: 0 20px;
+}
+.checkbox input {
+    display: none;
+}
+.checkbox label {
+    display: flex;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+
+    justify-items: flex-start;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.checkbox input:checked + label {
+    background-color: #ffffff;
+    background-image: url(../img/done.svg);
+    background-repeat: no-repeat;
+}
+.checkbox input:hover + label {
+    transition: 0.2s ease-in;
+    background-color: #ffffff96;
+}
+.list-container__title-date {
+    width: 60px;
+    flex-grow: 2;
+}
+.list-container__title-task {
+    flex-grow: 1;
+    max-width: 200px
+}
+
+/* Контейнер с заданиями */
+.list-container__content {
+    margin: 0 auto;
+    max-width: 400px;
+}
+.list-container__content > * {
+    margin-bottom: 10px;
+}
+
+.list-container_item {
+    display: flex;
+    font-family: 'Montserrat';
+    background-color: #e3e3e3;
+    align-items: center;
+    height: 45px;
+    border-radius: 4px;
+}
+.list-container_item:hover {
+    background-color: #b7b7b7;
+    transition: ease-in-out 0.2s;
+}
+.show-done-tasks {
+    margin: 10px auto;
+    display: block;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    border-radius: 5px;
+    height: 40px;
+}
+.show-done-tasks:hover {
+    background-color: chartreuse;
+    transition: 0.2s;
+}
+.list-container__delete-btn {
+    background-image: url(../img/delete.svg);
+    height: 30px;
+    width: 25px;
+    border: 0;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+
+/* Секция add-task */
+.add-task {
+    display: flex;
+    justify-content: center;
+}
+.add-task__btn {
+    display: flex;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    background-image: url(../img/btn.svg);
+    width:  79px;
+    height: 79px;
+}
+.add-task__btn:hover {
+    cursor: pointer;
+    background-image: url(../img/btn-hover.svg);
+    transition: 0.1s ease-in;
+    transform: rotate(90deg);
+}
+
+/* add task container */
+
+.new-task {
+    margin: 0 auto;
+    width: 375px;
+    margin-top: 30px;
+}
+.new-task__container {
+    font-family: 'Montserrat';
+}
+.new-task__container > * {
+    margin-bottom: 10px
+}
+
+.new-task__container input {
+    width: 100%;
+    height: 50px;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid #1AB8DB;
+    padding-left: 20px;
+}
+.new-task__container input::placeholder {
+}
+.new-task__add-delete-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 91px;
+}
+.new-task__add-button {
+    border-radius: 20px;
+    height: 40px;
+    width: 106px;
+    font-weight: 800;
+    color: #EEEEEE;
+    background: #1AB8DB;
+}
+.new-task__add-button:hover {
+    background: #168ca7;
+    transition: 0.2s ease-out;
+    border: none;
+    font-weight: 900;
+}
+.new-task__delete-button {
+    border-radius: 20px;
+    height: 40px;
+    width: 106px;
+    font-weight: 800;
+    color: #EEEEEE;
+    background: #FF0000;
+    transition: 0.2s ease-out;
+}
+.new-task__delete-button:hover {
+    background: #a00000;
+    border: none;
+    font-weight: 900;
+}
+
+.display-none {
+    display: none;
+}
+.display-block {
+    display: block;
+    font-weight: 500;
+}
+
+/* footer */
+.footer {
+    height: 70px;
+}
